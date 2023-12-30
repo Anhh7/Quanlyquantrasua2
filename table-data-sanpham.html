@@ -54,7 +54,7 @@
             class="app-menu__label">Bảng điều khiển</span></a></li>
       <li><a class="app-menu__item " href="table-data-table.html"><i class='app-menu__icon bx bx-id-card'></i>
           <span class="app-menu__label">Quản lý nhân viên</span></a></li>
-      <li><a class="app-menu__item " href="table-data-sanpham.html"><i class='app-menu__icon bx bx-id-card'></i>
+      <li><a class="app-menu__item " href="table-data-sanpham.html"><i class='app-menu__icon bx bx-purchase-tag-alt'></i>
           <span class="app-menu__label">Quản lý sản phẩm</span></a></li>
       <li><a class="app-menu__item active" href="table-data-product.html"><i class='app-menu__icon bx bx-purchase-tag-alt'></i><span 
             class="app-menu__label">Quản lý kho</span></a></li>
@@ -548,20 +548,14 @@ MODAL
             $('#sampleTable tbody :checkbox').prop('checked', $(this).is(':checked'));
             e.stopImmediatePropagation();
         });
-         //In dữ liệu
-        var myApp = new function () {
-          this.printTable = function () {
-            var tab = document.getElementById('sampleTable');
-            var win = window.open('', '', 'height=700,width=700');
-            win.document.write(tab.outerHTML);
-            win.document.close();
-            win.print();
-          }
+
+        function highlightMenuItem(element) {
+        // Loại bỏ lớp "active" từ tất cả các mục menu
+        $('.app-menu__item').removeClass('active');
+
+        // Thêm lớp "active" vào mục menu được click
+        $(element).addClass('active');
         }
-        //Modal
-        $("#show-emp").on("click", function () {
-          $("#ModalUP").modal({ backdrop: false, keyboard: false })
-        });
 
     </script>
 </body>

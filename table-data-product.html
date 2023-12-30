@@ -524,6 +524,14 @@ MODAL
             $('#sampleTable tbody :checkbox').prop('checked', $(this).is(':checked'));
             e.stopImmediatePropagation();
         });
+
+        function highlightMenuItem(element) {
+        // Loại bỏ lớp "active" từ tất cả các mục menu
+        $('.app-menu__item').removeClass('active');
+
+        // Thêm lớp "active" vào mục menu được click
+        $(element).addClass('active');
+        }
     </script>
 </body>
 
