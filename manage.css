@@ -15661,3 +15661,104 @@ text-align:center;
   background-color: white;
   color: white;
 }
+
+/* Form styles for system settings */
+form#system-settings-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.setting-item {
+  margin-bottom: 15px;
+}
+
+.setting-item label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.setting-item input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+/* Style for the system settings form */
+#system-settings-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.setting-item {
+  margin-bottom: 20px;
+}
+
+.setting-item label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Style for the select input */
+.setting-item select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Style for the range input */
+.setting-item input[type="range"] {
+  width: 100%;
+}
+
+/* Style for the checkboxes */
+.setting-item input[type="checkbox"] {
+  margin-left: 5px;
+}
+
+/* Style for the submit button */
+#system-settings-form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#system-settings-form button:hover {
+  background-color: #45a049;
+}
+
+.setting-item button {
+  background-color: #3498db; /* Màu nền */
+  color: #fff; /* Màu chữ */
+  padding: 10px 15px; /* Kích thước độ lớn của nút */
+  border: none; /* Loại bỏ đường viền */
+  cursor: pointer;
+  margin-top: 10px; /* Khoảng cách giữa các nút */
+}
+
+.setting-item button:hover {
+  background-color: #2980b9; /* Màu nền khi di chuột qua */
+}
